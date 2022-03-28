@@ -1,0 +1,252 @@
+@media (max-width: 600px) {
+  body .theme {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	column-gap: 5%;
+  }
+  body #winners {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	column-gap: 3%;
+  }
+
+  body #exhibition {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	row-gap: 0.2%;
+	column-gap: 1%;
+  }
+   body .judges {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	column-gap: 5%;
+  }
+  
+  body .fig-logo img{
+	max-width: 70px;
+	  filter: drop-shadow(3px 3px 4px rgb(150, 150, 150, 0.4));
+
+
+  }
+  
+  body .fig-logo p {
+	padding: 0.4rem;
+  }
+}
+
+@media (max-width: 420px) {
+
+  body #exhibition {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	column-gap: 1%;
+  }
+}
+
+@font-face {
+  font-family: "Rota-Regular";
+  src: url("/assets/Rota-Regular.otf")
+	format("opentype");
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rota-Bold";
+  src: url("/assets/Rota-Bold.otf")
+	format("opentype");
+  font-display: swap;
+  font-style: normal;
+}
+
+body {
+  background: black;
+  color: white;
+  max-width: 1080px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: "Rota-Regular";
+  padding: 1rem;
+}
+
+.fig-logo {
+   position: fixed;
+  bottom: 10%;
+  right: 10%;
+   display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fig-logo img {
+	max-width:100px;
+}
+
+.fig-logo p {
+  background: black;
+  padding: 0.6rem;
+  color:white;
+  margin-top:0.4rem;
+  text-align:center;
+	justify-content: center;
+	align-items: center;
+}
+
+.fig-logo a {
+  text-decoration:none;
+	 display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+div.fig-logo a:hover .fig-logo-image {
+  filter: drop-shadow(3px 3px 4px rgb(150, 150, 150, 0.4));
+  transition: 0.2s;
+}
+
+
+div.fig-logo a:hover .fig-logo-text {
+ text-decoration:underline;
+}
+
+
+.header-video {
+  margin-bottom: 8rem;
+}
+
+.entries {
+  color: #00ff00;
+  /*   font-size: 20pt; */
+  font-size: 1.6667rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 40pt;
+  text-align: center;
+}
+h3 {
+  font-size: 35pt;
+}
+
+#winners {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3%;
+  row-gap: 3%;
+  margin-bottom: 8rem;
+}
+
+#winners strong {
+  font-family: "Rota-Bold";
+  font-size: 20pt;
+  font-style: normal;
+  white-space: pre-line;
+}
+#winners a {
+  font-family: "Rota-Bold";
+  font-size: 20pt;
+  font-style: normal;
+  white-space: pre-line;
+  color:white;
+}
+#winners p {
+  font-size: 12pt;
+  color: rgb(255, 255, 255, 0.8);
+  line-height: 1.4;
+}
+
+video {
+  width: 100%;
+  margin-bottom: 1rem;
+  muted: true;
+  loading: lazy;
+}
+
+img {
+  width: 100%;
+}
+
+.theme {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5%;
+  margin-bottom: 8rem;
+}
+
+.theme p {
+  font-size: 15pt;
+  line-height: 1.5;
+}
+
+.judges {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10%;
+  row-gap: 5%;
+  margin-bottom: 24rem;
+}
+
+.judges img {
+  /*   width:100%; */
+  /*   max-width:513px; */
+  height: 400px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+.judges strong {
+  font-family: "Rota-Bold";
+  font-size: 20pt;
+  font-style: normal;
+  white-space: pre-line;
+}
+.judges p {
+  font-size: 12pt;
+  color: rgb(255, 255, 255, 0.8);
+  line-height: 1.4;
+}
+
+#exhibition {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2%;
+  row-gap: 0.8%;
+  margin-bottom: 8rem;
+}
+
+#exhibition strong {
+  font-family: "Rota-Bold";
+  font-size: 20pt;
+  font-style: normal;
+  white-space: pre-line;
+}
+#exhibition a {
+  font-family: "Rota-Bold";
+  font-size: 20pt;
+  font-style: normal;
+  white-space: pre-line;
+  color:white;
+}
+#exhibition p {
+  font-size: 12pt;
+  color: rgb(255, 255, 255, 0.8);
+  line-height: 1.4;
+}
+
+.partnership {
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.partnership img {
+  width: 120px;
+  margin-left: 0.5rem;
+}
+
